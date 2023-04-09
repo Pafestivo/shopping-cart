@@ -65,6 +65,11 @@
 
   .left .details {
     align-items: center;
+    padding: 0 30px;
+  }
+
+  .left a {
+    margin-bottom: 40px;
   }
 
   .right img {
@@ -86,7 +91,8 @@
 
   .contact img {
     margin: 0 auto;
-    width: 400px;
+    width: 300px;
+    margin-bottom: 40px;
   }
 
   .sidebar {
@@ -102,5 +108,6 @@
 
   .display {
     grid-template-columns: 1fr;
+    margin-bottom: 40px;
   }
 }
