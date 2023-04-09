@@ -18,6 +18,11 @@
   padding: 10px 100px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header h1 {
   font-size: 40px;
   cursor: pointer;
