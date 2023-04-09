@@ -19,7 +19,7 @@ const Header = () => {
           <p>Shop</p>
           </Link>
 
-          <p>Cart</p>
+          <p><i class="fa-solid fa-cart-shopping"></i></p>
           
         </nav>
       </div>

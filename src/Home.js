@@ -5,7 +5,11 @@ function Home() {
   return (
     <div className="home">
       <div className="left">
-        <h1>New items added to the shop, check them out!</h1>
+        <div className="details">
+          <h1>XS Wooden Kennel</h1>
+          <h2>Is now available for sale, with a new item discount and free shipping.</h2>
+        </div>
+
         <Link to='/shop'>
           <p className='btn'>Shop now</p>
         </Link>
