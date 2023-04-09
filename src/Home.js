@@ -6,7 +6,7 @@ function Home() {
     <div className="home">
       <div className="left">
         <div className="details">
-          <h1>XS Wooden Kennel</h1>
+          <h1>XS Wooden Dog Kennel</h1>
           <h2>Is now available for sale, with a new item discount and free shipping.</h2>
         </div>
 

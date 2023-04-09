@@ -47,11 +47,11 @@ a {
   background-color: black;
   margin: auto;
   display: block;
+  transition: width 0.15s ease-in-out;
 }
 
 .header nav p:hover::after {
   width: 100%;
-  transition: width 0.15s linear;
 }
 
 @keyframes header {
