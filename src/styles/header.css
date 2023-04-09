@@ -3,6 +3,7 @@
   height: 200px;
   align-items: center;
   color: white;
+  animation: header 0.4s ease-in;
 }
 
 .head-container {
@@ -51,4 +52,14 @@ a {
 .header nav p:hover::after {
   width: 100%;
   transition: width 0.15s linear;
+}
+
+@keyframes header {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
