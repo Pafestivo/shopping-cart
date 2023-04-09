@@ -44,10 +44,14 @@ a {
   content: '';
   width: 0;
   height: 3px;
-  background-color: black;
+  background-color: crimson;
   margin: auto;
   display: block;
   transition: width 0.15s ease-in-out;
+}
+
+.header nav p:hover {
+  color: crimson;
 }
 
 .header nav p:hover::after {

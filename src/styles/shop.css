@@ -18,6 +18,7 @@
 }
 
 .current-view > h1:first-of-type {
+  color: crimson;
   font-size: 25px;
 }
 
@@ -28,22 +29,32 @@
   font-size: 15px;
 }
 
-.categories h1 {
+.categories * {
   cursor: pointer;
-  width: max-content
+  width: max-content;
+  transition: color 0.15s ease-in-out;
 }
 
-.categories h1::after {
+.categories *:hover {
+  color: crimson;
+}
+
+.categories *::before {
+  content: '| ';
+  color: crimson;
+}
+
+.categories *::after {
   content: '';
   width: 0;
   height: 1px;
-  background-color: rgb(255, 255, 255);
+  background-color: crimson;
   margin-top: 2px;
   display: block;
   transition: width 0.15s ease-in-out;
 }
 
-.categories h1:hover::after {
+.categories *:hover::after {
   width: 100%;
 }
 

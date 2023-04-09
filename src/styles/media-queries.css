@@ -1,0 +1,37 @@
+@media only screen and (max-width: 1300px) {
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 50px;
+    margin: 0;
+  }
+
+  .left {
+    align-items: center;
+    padding: 0;
+  }
+
+  .left .details {
+    align-items: center;
+  }
+
+  .right img {
+    width: 500px;
+  }
+
+  .shop {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .sidebar {
+    padding: 0;
+    align-items: center;
+  }
+
+  .categories {
+    flex-direction: row;
+    column-gap: 50px;
+  }
+}

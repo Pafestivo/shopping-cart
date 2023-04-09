@@ -58,7 +58,7 @@ body {
   bottom: 0;
   right: 0;
   z-index: -1;
-  background-color: rgb(68, 68, 68);
+  background-color: crimson;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
@@ -83,6 +83,7 @@ body {
 .right img {
   width: 800px;
   border: 10px solid #ffffff;
+  border-radius: 15px;
 }
 
 @keyframes home-left {
