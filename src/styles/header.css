@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  color: white;
+}
+
+.head-container {
+  background-color: white;
+  height: max-content;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1.5fr 1fr;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin-top:10px;
+  padding: 10px 100px;
+}
+
+.header h1 {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.header nav {
+  display: flex;
+  font-size: 30px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header nav p {
+  cursor: pointer;
+}
+
+.header nav p::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: black;
+  margin: auto;
+  display: block;
+}
+
+.header nav p:hover::after {
+  width: 100%;
+  transition: width 0.15s linear;
+}
