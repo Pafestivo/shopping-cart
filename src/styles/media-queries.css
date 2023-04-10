@@ -172,6 +172,10 @@
     width: 90%;
   }
 
+  .cart {
+    margin-bottom: 86px;
+  }
+
   .cart-item-details {
     margin-left: 20px;
   }
@@ -190,6 +194,8 @@
   }
 
   .order-total {
+    position: fixed;
+    width: 90%;
     padding: 10px 0;
     flex-direction: column;
   }
