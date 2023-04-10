@@ -1,5 +1,7 @@
 .shop {
   display: grid;
+  margin: 0 auto;
+  width: 1400px;
   grid-template-columns: 1fr 2fr;
   color: white;
 }

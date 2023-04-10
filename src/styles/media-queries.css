@@ -95,6 +95,10 @@
     margin-bottom: 40px;
   }
 
+  .shop {
+    width: max-content;
+  }
+
   .sidebar {
     align-items: flex-start;
     padding-left: 50px;
