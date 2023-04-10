@@ -34,6 +34,15 @@
     flex-direction: row;
     column-gap: 50px;
   }
+
+  .item-details {
+    margin-top: 50px;
+    align-items: center;
+  }
+
+  .price-desc {
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -97,6 +106,7 @@
 
   .shop {
     width: max-content;
+    align-items: center;
   }
 
   .sidebar {
@@ -113,5 +123,30 @@
   .display {
     grid-template-columns: 1fr;
     margin-bottom: 40px;
+  }
+
+  .item-details {
+    width: 100vw;
+  }
+
+  .item-details h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .price-desc {
+    align-items: center;
+  }
+
+  .price-desc p {
+    font-size: 20px;
+  }
+
+  .actions {
+    margin-bottom: 40px;
+  }
+
+  .btn { 
+    width: 90%;
   }
 }
