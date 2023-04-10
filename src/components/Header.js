@@ -19,8 +19,9 @@ const Header = () => {
           <p>Shop</p>
           </Link>
 
-          <p><i className="fa-solid fa-cart-shopping"></i></p>
-          
+          <Link to='/cart'>
+            <p><i className="fa-solid fa-cart-shopping"></i></p>
+          </Link>
         </nav>
       </div>
     </div>

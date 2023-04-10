@@ -9,6 +9,7 @@ import ShopEquipment from "./components/shop categories/ShopEquipment";
 import ShopToys from "./components/shop categories/ShopToys";
 import ShopKennels from "./components/shop categories/ShopKennels";
 import ItemPage from "./components/ItemPage";
+import Cart from "./components/Cart";
 
 const RouteSwitch = () => {
   return (
@@ -23,6 +24,7 @@ const RouteSwitch = () => {
           <Route path="/shop/toys" element={<ShopToys />} />
           <Route path="/shop/kennels" element={<ShopKennels />} />
           <Route path="shop/:id" element={<ItemPage />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </BrowserRouter>
   )

@@ -25,7 +25,7 @@ import catToyDetails from '../images/cat-toy-details.jpg'
 import woodenDogHouse from '../images/dog-house.jpg'
 import dogKennel from '../images/dog-kennel.jpg'
 
-const Items = [
+const CartItems = [
   {
     name: 'Wag Dry Dog Food Lamb & Lentil Recipe',
     description: 'Real australian lamb, 4lb bag.',
@@ -208,4 +208,4 @@ const Items = [
   },
 ]
 
-export default Items
+export default CartItems
