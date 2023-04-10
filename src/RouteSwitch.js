@@ -4,6 +4,10 @@ import Home from "./Home";
 import Contact from "./components/Contact";
 import Shop from "./components/Shop";
 import Header from './components/Header';
+import ShopFood from "./components/shop categories/ShopFood";
+import ShopEquipment from "./components/shop categories/ShopEquipment";
+import ShopToys from "./components/shop categories/ShopToys";
+import ShopKennels from "./components/shop categories/ShopKennels";
 
 const RouteSwitch = () => {
   return (
@@ -13,6 +17,10 @@ const RouteSwitch = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/shop" element={<Shop />} />
+          <Route path="/shop/food" element={<ShopFood />} />
+          <Route path="/shop/equipment" element={<ShopEquipment />} />
+          <Route path="/shop/toys" element={<ShopToys />} />
+          <Route path="/shop/kennels" element={<ShopKennels />} />
       </Routes>
     </BrowserRouter>
   )

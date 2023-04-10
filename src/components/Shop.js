@@ -1,23 +1,13 @@
 import React from "react";
 import ItemCard from "./itemCard";
 import Items from "../data/items";
+import ShopSidebar from "./shop categories/ShopSidebar";
 import '../styles/shop.css';
 
 const Shop = () => {
   return(
     <div className="shop">
-      <div className="sidebar">
-        <div className="current-view">
-          <h1>shop/</h1>
-          <h1>All Products</h1>
-        </div>
-        <div className="categories">
-          <h1>Food</h1>
-          <h1>Equipment</h1>
-          <h1>Toys</h1>
-          <h1>Kennels</h1>
-        </div>
-      </div>
+      <ShopSidebar category={'All Products'} />
 
       <div className="display">
       {Items.map(item => {
