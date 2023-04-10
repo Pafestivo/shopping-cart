@@ -172,8 +172,26 @@
     width: 90%;
   }
 
+  .cart-item-details {
+    margin-left: 20px;
+  }
+
+  .cart-img-container img {
+    max-width: 100%;
+    max-height: 90%;
+  }
+
+  .quant-price {
+    flex-direction: column;
+  }
+
+  .quant-price p:last-of-type {
+    margin-left: 0;
+  }
+
   .order-total {
-    column-gap: 60px;
+    padding: 10px 0;
+    flex-direction: column;
   }
 
   .order-total h1 {
@@ -183,6 +201,7 @@
   .checkout {
     font-size: 20px;
     padding: 5px 0;
+    width: 40%;
   }
   
   .checkout:hover {

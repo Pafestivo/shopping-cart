@@ -7,7 +7,7 @@ const Cart = () => {
     <div className="cart">
       {CartItems.map(item => {
         return(
-          <div className="cart-item">
+          <div className="cart-item" key={item.id}>
             <div className="cart-img-container">
               <img src={item.images[0]} alt={item.name} />
             </div>
@@ -21,7 +21,7 @@ const Cart = () => {
           </div>
         )})}
         <div className="order-total">
-          <h1>Total: 123142</h1>
+          <h1>Total: $1263.5</h1>
           <p className="checkout">Checkout</p>
         </div>
       
