@@ -66,23 +66,6 @@
   height: max-content
 }
 
-.item-card {
-  width: 350px;
-  height: 400px;
-  background-color: black;
-  justify-self: center;
-  align-self: center;
-  cursor: pointer;
-  transform: scale(0);
-  transition: transform 0.15s ease-in-out;
-  animation: item-card 0.3s ease-in 0.3s;
-  animation-fill-mode: forwards;
-}
-
-.item-card:hover {
-  transform: scale(1.1);
-}
-
 @keyframes sidebar {
   0% {
     transform: translateX(-100%);
@@ -90,15 +73,5 @@
 
   100% {
     transform: translateX(0);
-  }
-}
-
-@keyframes item-card {
-  0% {
-    transform: scale(0);
-  }
-
-  100% {
-    transform: scale(1);
   }
 }

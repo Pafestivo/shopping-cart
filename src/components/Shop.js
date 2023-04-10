@@ -1,4 +1,6 @@
 import React from "react";
+import ItemCard from "./itemCard";
+import Items from "../data/items";
 import '../styles/shop.css';
 
 const Shop = () => {
@@ -18,12 +20,9 @@ const Shop = () => {
       </div>
 
       <div className="display">
-        <div className="item-card"></div>
-        <div className="item-card"></div>
-        <div className="item-card"></div>
-        <div className="item-card"></div>
-        <div className="item-card"></div>
-        <div className="item-card"></div>
+      {Items.map(item => {
+        return <ItemCard src={item.images[0]} name={item.name} price={item.price} key={item.id}/>
+      })}
       </div>
     </div>
   )
