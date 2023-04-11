@@ -4,7 +4,6 @@
   row-gap: 20px;
   width: 70%;
   padding: 40px auto 0 auto;
-  margin: 0 auto;
 }
 
 .item-details h1 {
@@ -26,7 +25,7 @@
 
 .item-info {
   display: flex;
-  max-width: 70%;
+  max-width: 100%;
   flex-direction: column;
   row-gap: 60px;
 }
@@ -36,6 +35,7 @@
   margin: 0 auto;
   flex-direction: column;
   row-gap: 10px;
+  width: 100%;
 }
 
 .price-desc p {
@@ -58,7 +58,7 @@
   align-items: center;
 }
 
-.btn {
+.actions .btn {
   background-color: white;
   font-size: 25px;
   padding: 10px 0;
@@ -89,6 +89,7 @@
 
 .item-added {
   font-size: 20px;
+  width: max-content;
   position: absolute;
   top: 0;
   left: 0;
