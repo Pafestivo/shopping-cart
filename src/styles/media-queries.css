@@ -51,8 +51,16 @@
     align-items: center;
   }
 
+  .item-details h1 {
+    text-align: center;
+  }
+
   .price-desc {
     align-items: center;
+  }
+
+  .actions {
+    margin-bottom: 50px;
   }
 
   .cart {

@@ -5,11 +5,11 @@ const Contact = () => {
   return(
     <div className="contact">
       <div className="social">
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Pafestivo"><i class="fa-brands fa-github"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.messenger.com/"><i class="fa-brands fa-facebook-messenger"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Pafestivo"><i className="fa-brands fa-github"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/"><i className="fa-brands fa-instagram"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/"><i className="fa-brands fa-twitter"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.messenger.com/"><i className="fa-brands fa-facebook-messenger"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f"></i></a>
       </div>
 
       <div className="direction">

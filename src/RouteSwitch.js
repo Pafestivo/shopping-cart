@@ -15,6 +15,7 @@ import CartItems from "./data/CartItems";
 const RouteSwitch = () => {
 
   const [cartLength, setCartLength] = useState(CartItems.length)
+  const [cartItems, setCartItems] = useState(CartItems)
 
   return (
     <BrowserRouter>
@@ -27,8 +28,8 @@ const RouteSwitch = () => {
           <Route path="/shop/equipment" element={<ShopEquipment />} />
           <Route path="/shop/toys" element={<ShopToys />} />
           <Route path="/shop/kennels" element={<ShopKennels />} />
-          <Route path="shop/:id" element={<ItemPage />} />
-        <Route path="/cart" element={<Cart setCartLength={setCartLength} />} />
+          <Route path="shop/:id" element={<ItemPage setCartLength={setCartLength} cartItems={cartItems} setCartItems={setCartItems} />} />
+        <Route path="/cart" element={<Cart setCartLength={setCartLength} cartItems={cartItems} setCartItems={setCartItems} />} />
       </Routes>
     </BrowserRouter>
   )

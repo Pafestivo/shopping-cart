@@ -36,7 +36,7 @@ const Items = [
       wagDry,
       wagDryDetails,
     ],
-    quantity: 0,
+    quantity: 1,
     id: 1,
   },
   {
@@ -49,7 +49,7 @@ const Items = [
       blueBuffalo,
       blueBuffaloDetails,
     ],
-    quantity: 0,
+    quantity: 1,
     id: 2,
   },
   {
@@ -62,7 +62,7 @@ const Items = [
       pedigreeTender,
       pedigreeTenderDetails,
     ],
-    quantity: 0,
+    quantity: 1,
     id: 3,
   },
   {
@@ -75,7 +75,7 @@ const Items = [
       purinaOne,
       purinaOneDetails,
     ],
-    quantity: 0,
+    quantity: 1,
     id: 4,
   },
   {
@@ -88,7 +88,7 @@ const Items = [
       purinaOneCat,
       purinaOneCatDetails,
     ],
-    quantity: 0,
+    quantity: 1,
     id: 5,
   },
   {
@@ -101,7 +101,7 @@ const Items = [
       iamsProactive,
       iamsProactiveDetails,
     ],
-    quantity: 0,
+    quantity: 1,
     id: 6,
   },
   {
@@ -114,7 +114,7 @@ const Items = [
       pinkLeash,
       pinkLeashDetails,
     ],
-    quantity: 0,
+    quantity: 1,
     id: 7,
   },
   {
@@ -127,7 +127,7 @@ const Items = [
       iokheiraLeash,
       iokheiraLeashDetails,
     ],
-    quantity: 0,
+    quantity: 1,
     id: 8,
   },
   {
@@ -140,7 +140,7 @@ const Items = [
       gorillaBowl,
       gorillaBowlDetails,
     ],
-    quantity: 0,
+    quantity: 1,
     id: 9,
   },
   {
@@ -153,7 +153,7 @@ const Items = [
       catBowl,
       catBowlDetails,
     ],
-    quantity: 0,
+    quantity: 1,
     id: 10,
   },
   {
@@ -166,7 +166,7 @@ const Items = [
       dogChewToy,
       dogChewToyDetails,
     ],
-    quantity: 0,
+    quantity: 1,
     id: 11,
   },
   {
@@ -179,7 +179,7 @@ const Items = [
       catToy,
       catToyDetails,
     ],
-    quantity: 0,
+    quantity: 1,
     id: 12,
   },
   {
@@ -191,7 +191,7 @@ const Items = [
     images: [
       woodenDogHouse,
     ],
-    quantity: 0,
+    quantity: 1,
     id: 13,
   },
   {
@@ -203,7 +203,7 @@ const Items = [
     images: [
       dogKennel,
     ],
-    quantity: 0,
+    quantity: 1,
     id: 14,
   },
 ]

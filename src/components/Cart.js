@@ -1,11 +1,9 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import CartItems from "../data/CartItems";
 import '../styles/cart.css'
 
-const Cart = ({ setCartLength }) => {
+const Cart = ({ setCartLength, cartItems, setCartItems }) => {
 
-  const [cartItems, setCartItems] = useState(CartItems)
   const [total, setTotal] = useState(0)
 
   const calculateTotal = useCallback(() => {
