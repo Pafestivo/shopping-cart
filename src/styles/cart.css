@@ -54,6 +54,7 @@
 .quant-control {
   display: flex;
   column-gap: 20px;
+  align-items: center;
 }
 
 .quant-btn {
@@ -102,9 +103,9 @@
 .checkout {
   background-color: crimson;
   font-size: 20px;
-  padding: 10px 0;
+  padding: 10px 25px;
   color: white;
-  width: 15%;
+  width: max-content;
   border: 2px solid black;
   text-align: center;
   cursor: pointer;
