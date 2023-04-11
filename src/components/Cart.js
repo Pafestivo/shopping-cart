@@ -22,40 +22,34 @@ const Cart = ({ setCartLength }) => {
   }, [cartItems, calculateTotal])
 
   const decrementQuantity = (item) => {
-    const updatedCartItems = [...cartItems]
+    const itemIndex = cartItems.findIndex(cartItem => cartItem.id === item.id)
 
-    const itemIndex = updatedCartItems.findIndex(cartItem => cartItem.id === item.id)
-
-    if(updatedCartItems[itemIndex].quantity - 1 >= 0 ) {
-      updatedCartItems[itemIndex].quantity--
+    if(cartItems[itemIndex].quantity - 1 >= 0 ) {
+      cartItems[itemIndex].quantity--
     }
 
-    if(updatedCartItems[itemIndex].quantity === 0) {
-      updatedCartItems.splice(itemIndex, 1)
+    if(cartItems[itemIndex].quantity === 0) {
+      cartItems.splice(itemIndex, 1)
     }
 
-    setCartItems(updatedCartItems)
+    setCartItems(cartItems)
     calculateTotal()
   }
 
   const incrementQuantity = (item) => {
-    const updatedCartItems = [...cartItems]
+    const itemIndex = cartItems.findIndex(cartItem => cartItem.id === item.id)
 
-    const itemIndex = updatedCartItems.findIndex(cartItem => cartItem.id === item.id)
-
-    updatedCartItems[itemIndex].quantity++
-    setCartItems(updatedCartItems)
+    cartItems[itemIndex].quantity++
+    setCartItems(cartItems)
     calculateTotal()
   }
 
   const deleteItem = (item) => {
-    const updatedCartItems = [...cartItems]
+    const itemIndex = cartItems.findIndex(cartItem => cartItem.id === item.id)
 
-    const itemIndex = updatedCartItems.findIndex(cartItem => cartItem.id === item.id)
-
-    updatedCartItems.splice(itemIndex, 1)
-    setCartItems(updatedCartItems)
-    setCartLength(updatedCartItems.length)
+    cartItems.splice(itemIndex, 1)
+    setCartItems(cartItems)
+    setCartLength(cartItems.length)
     calculateTotal()
   }
 
