@@ -4,6 +4,7 @@
 }
 
 .cart-item {
+  position: relative;
   display: flex;
   background-color: white;
   height: 200px;
@@ -46,8 +47,44 @@
   margin-bottom: 15px;
 }
 
-.quant-price p:last-of-type {
+.quant-price .quant-control {
   margin-left: auto;
+}
+
+.quant-control {
+  display: flex;
+  column-gap: 20px;
+}
+
+.quant-btn {
+  display: flex;
+  cursor: pointer;
+  background-color: rgb(206, 85, 109);
+  width: 35px;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  user-select: none;
+}
+
+.fa-trash {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  background-color: rgb(206, 85, 109);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.quant-btn:hover,
+.fa-trash:hover {
+  background-color: rgb(206, 59, 88);
 }
 
 .order-total {
