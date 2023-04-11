@@ -216,6 +216,7 @@
 
   .quant-price .quant-control {
     margin: 0;
+    align-items: center;
   }
   
   .mobile-hidden {
