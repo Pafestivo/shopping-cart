@@ -74,12 +74,12 @@
   background-color: rgb(175, 175, 175);
 }
 
-.buy-now {
+.actions .buy-now {
   color: white;
   background-color: crimson;
 }
 
-.buy-now:hover {
+.actions .buy-now:hover {
   background-color: rgb(148, 15, 41);
 }
 
