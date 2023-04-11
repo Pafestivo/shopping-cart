@@ -25,6 +25,17 @@
     height: 100px;
   }
 
+  .display {
+    max-width: 1000px;
+    column-gap: 100px;
+    margin: 0 auto;
+  }
+
+  .display a {
+    width: max-content;
+    justify-self: center;
+  }
+
   .sidebar {
     padding: 0;
     align-items: center;
