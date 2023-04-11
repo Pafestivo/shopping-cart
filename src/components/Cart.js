@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import '../styles/cart.css'
 
 const Cart = ({ setCartLength, cartItems, setCartItems }) => {
@@ -77,9 +76,8 @@ const Cart = ({ setCartLength, cartItems, setCartItems }) => {
         )})}
         <div className="order-total">
           <h1>Total: ${total}</h1>
-          <Link to="/">
+
           <p onClick={() => alert("You can't buy from a fake store.")} className="checkout">Checkout</p>
-          </Link>
         </div>
       
     </div>
