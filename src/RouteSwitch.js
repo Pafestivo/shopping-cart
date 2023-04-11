@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./Home";
 import Contact from "./components/Contact";
@@ -10,11 +10,15 @@ import ShopToys from "./components/shop categories/ShopToys";
 import ShopKennels from "./components/shop categories/ShopKennels";
 import ItemPage from "./components/ItemPage";
 import Cart from "./components/Cart";
+import CartItems from "./data/CartItems";
 
 const RouteSwitch = () => {
+
+  const [cartLength, setCartLength] = useState(CartItems.length)
+
   return (
     <BrowserRouter>
-      <Header />
+      <Header cartLength={cartLength}/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
@@ -24,7 +28,7 @@ const RouteSwitch = () => {
           <Route path="/shop/toys" element={<ShopToys />} />
           <Route path="/shop/kennels" element={<ShopKennels />} />
           <Route path="shop/:id" element={<ItemPage />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/cart" element={<Cart setCartLength={setCartLength} />} />
       </Routes>
     </BrowserRouter>
   )

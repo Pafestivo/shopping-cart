@@ -58,6 +58,26 @@ a {
   width: 100%;
 }
 
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  background-color: crimson;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  transform: translate(60%, -50%);
+  top: 0;
+  right: 0;
+}
+
 @keyframes header {
   0% {
     transform: translateX(-100%);

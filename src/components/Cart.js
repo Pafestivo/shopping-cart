@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import CartItems from "../data/CartItems";
 import '../styles/cart.css'
 
-const Cart = () => {
+const Cart = ({ setCartLength }) => {
 
   const [cartItems, setCartItems] = useState(CartItems)
   const [total, setTotal] = useState(0)
@@ -55,6 +55,7 @@ const Cart = () => {
 
     updatedCartItems.splice(itemIndex, 1)
     setCartItems(updatedCartItems)
+    setCartLength(updatedCartItems.length)
     calculateTotal()
   }
 
