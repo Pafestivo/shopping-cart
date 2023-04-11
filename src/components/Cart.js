@@ -71,10 +71,10 @@ const Cart = () => {
             <div className="cart-item-details">
               <h1>{item.name}</h1>
               <div className="quant-price">
-                <p>${item.price * item.quantity}</p>
+                <p>${(item.price * item.quantity).toFixed(2)}</p>
                 <div className="quant-control">
                   <p onClick={() => decrementQuantity(item)} className="quant-btn">-</p>
-                  <p>Quantity: {item.quantity}</p>
+                  <p><span className="mobile-hidden">Quantity:</span> {item.quantity}</p>
                   <p onClick={() => incrementQuantity(item)} className="quant-btn">+</p>
                 </div>
               </div>

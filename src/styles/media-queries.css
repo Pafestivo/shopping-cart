@@ -213,4 +213,12 @@
   .checkout:hover {
     background-color: rgb(139, 13, 38);
   }
+
+  .quant-price .quant-control {
+    margin: 0;
+  }
+  
+  .mobile-hidden {
+    display: none;
+  }
 }
