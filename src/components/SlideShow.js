@@ -28,18 +28,21 @@ const SlideShow = ({ images, itemName }) => {
   }
 
   const showPrevious = () => {
-    if(currentIndex === 0) {
-      setCurrentIndex(images.length - 1)
-      setActiveCircleIndex(images.length - 1)
-    }
-    else {
-      setCurrentIndex(currentIndex - 1)
-      setActiveCircleIndex(currentIndex - 1)
-    }
-    
+    setLoading(true)
+    setTimeout(() => {
+      if(currentIndex === 0) {
+        setCurrentIndex(images.length - 1)
+        setActiveCircleIndex(images.length - 1)
+      }
+      else {
+        setCurrentIndex(currentIndex - 1)
+        setActiveCircleIndex(currentIndex - 1)
+      }
+    }, 2000);
   }
 
   const showNext = () => {
+    setLoading(true)
     if(currentIndex === images.length - 1) {
       setCurrentIndex(0)
       setActiveCircleIndex(0)
@@ -68,7 +71,10 @@ const SlideShow = ({ images, itemName }) => {
 
           {/* while waiting for image, show loading */}
           {loading ? (
-            <div className="loading">Loading...</div>
+            <div className="loading">
+              <i class="fa-solid fa-paw fa-bounce"></i>
+              <p>Loading...</p>
+            </div>
           ) : (
             null
           )}
