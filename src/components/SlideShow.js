@@ -5,16 +5,7 @@ const SlideShow = ({ images, itemName }) => {
 
   const [currentIndex, setCurrentIndex] = useState(0)
   const [overlayVisible, setOverlayVisible] = useState(false)
-
-
-  useEffect(() => {
-    if(currentIndex < 0) {
-      setCurrentIndex(images.length - 1)
-    }
-    else if(currentIndex >= images.length) {
-      setCurrentIndex(0)
-    }
-  }, [currentIndex, images.length])
+  const [activeCircleIndex, setActiveCircleIndex] = useState(0)
 
   // close the overlay on window click
   useEffect(() => {
@@ -36,11 +27,30 @@ const SlideShow = ({ images, itemName }) => {
   }
 
   const showPrevious = () => {
-    setCurrentIndex(currentIndex - 1)
+    if(currentIndex === 0) {
+      setCurrentIndex(images.length - 1)
+      setActiveCircleIndex(images.length - 1)
+    }
+    else {
+      setCurrentIndex(currentIndex - 1)
+      setActiveCircleIndex(currentIndex - 1)
+    }
+    
   }
 
   const showNext = () => {
-    setCurrentIndex(currentIndex + 1)
+    if(currentIndex === images.length - 1) {
+      setCurrentIndex(0)
+      setActiveCircleIndex(0)
+    } else {
+      setCurrentIndex(currentIndex + 1)
+      setActiveCircleIndex(currentIndex + 1)
+    }
+  }
+  
+  const handleCircleClick = (index) => {
+    setCurrentIndex(index)
+    setActiveCircleIndex(index)
   }
 
   return (
@@ -54,7 +64,17 @@ const SlideShow = ({ images, itemName }) => {
       ) : (
         <img src={images[currentIndex]} alt={itemName} onClick={displayImage} />
       )}
-
+      <div className="circles-container">
+        {images.map((image, index) => {
+          return(
+            <div
+            key = {index}
+            className={index === activeCircleIndex ? "circle active": "circle"}
+            onClick={() => handleCircleClick(index)}
+            />
+          ) 
+        })}
+      </div>
 
       {overlayVisible && (
         
