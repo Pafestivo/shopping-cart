@@ -6,6 +6,7 @@ const SlideShow = ({ images, itemName }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [overlayVisible, setOverlayVisible] = useState(false)
   const [activeCircleIndex, setActiveCircleIndex] = useState(0)
+  const [loading, setLoading] = useState(true)
 
   // close the overlay on window click
   useEffect(() => {
@@ -53,6 +54,10 @@ const SlideShow = ({ images, itemName }) => {
     setActiveCircleIndex(index)
   }
 
+  const handleImageLoad = () => {
+    setLoading(false)
+  }
+
   return (
     <div className="slider">
       {images.length > 1 ? (
@@ -60,6 +65,18 @@ const SlideShow = ({ images, itemName }) => {
           <p className="prevArrow" onClick={showPrevious}>❰</p>
           <img src={images[currentIndex]} alt={itemName} onClick={displayImage} />
           <p className="nextArrow" onClick={showNext}>❱</p>
+
+          {/* while waiting for image, show loading */}
+          {loading ? (
+            <div className="loading">Loading...</div>
+          ) : (
+            <img 
+              src={images[currentIndex]}
+              alt={itemName}
+              onClick={displayImage}
+              onLoad={handleImageLoad} // change loading to false when image loaded
+            />
+          )}
         </div>
       ) : (
         <img src={images[currentIndex]} alt={itemName} onClick={displayImage} />
