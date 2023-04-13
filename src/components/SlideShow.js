@@ -70,16 +70,11 @@ const SlideShow = ({ images, itemName }) => {
           {loading ? (
             <div className="loading">Loading...</div>
           ) : (
-            <img 
-              src={images[currentIndex]}
-              alt={itemName}
-              onClick={displayImage}
-              onLoad={handleImageLoad} // change loading to false when image loaded
-            />
+            null
           )}
         </div>
       ) : (
-        <img src={images[currentIndex]} alt={itemName} onClick={displayImage} />
+        <img src={images[currentIndex]} alt={itemName} onClick={displayImage} onLoad={handleImageLoad} />
       )}
       <div className="circles-container">
         {images.map((image, index) => {
