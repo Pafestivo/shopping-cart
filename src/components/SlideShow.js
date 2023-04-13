@@ -63,7 +63,7 @@ const SlideShow = ({ images, itemName }) => {
       {images.length > 1 ? (
         <div className="slider">
           <p className="prevArrow" onClick={showPrevious}>❰</p>
-          <img src={images[currentIndex]} alt={itemName} onClick={displayImage} />
+          <img src={images[currentIndex]} alt={itemName} onClick={displayImage} onLoad={handleImageLoad} />
           <p className="nextArrow" onClick={showNext}>❱</p>
 
           {/* while waiting for image, show loading */}
