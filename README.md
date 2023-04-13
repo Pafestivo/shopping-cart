@@ -1,2 +1,3 @@
 # shopping-cart
-Using react to build a shopping cart for finctional store
+<a href="https://shopping-cart-0rky.onrender.com/">Live demo</a><br>
+An online shop for a finctional store. <br>
