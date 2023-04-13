@@ -29,7 +29,6 @@ const SlideShow = ({ images, itemName }) => {
 
   const showPrevious = () => {
     setLoading(true)
-    setTimeout(() => {
       if(currentIndex === 0) {
         setCurrentIndex(images.length - 1)
         setActiveCircleIndex(images.length - 1)
@@ -37,8 +36,7 @@ const SlideShow = ({ images, itemName }) => {
       else {
         setCurrentIndex(currentIndex - 1)
         setActiveCircleIndex(currentIndex - 1)
-      }
-    }, 2000);
+      };
   }
 
   const showNext = () => {
