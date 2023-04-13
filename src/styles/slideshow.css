@@ -1,0 +1,61 @@
+.slider {
+  height: 100%;
+}
+
+.prevArrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 60px;
+  color: crimson;
+  cursor: pointer;
+}
+
+.nextArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  font-size: 60px;
+  color: crimson;
+  cursor: pointer;
+}
+
+.overlay-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.relative-element {
+  position: relative;
+  width: max-content;
+  height: max-content;
+}
+
+.overlay-image img {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.overlay-image .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  cursor: pointer;
+  color: crimson;
+  background-color: rgb(0, 0, 0);
+}
