@@ -51,6 +51,7 @@ const SlideShow = ({ images, itemName }) => {
   }
   
   const handleCircleClick = (index) => {
+    setLoading(true)
     setCurrentIndex(index)
     setActiveCircleIndex(index)
   }
